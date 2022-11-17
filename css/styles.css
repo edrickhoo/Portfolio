@@ -11884,3 +11884,7 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+.text-justify {
+  text-align: justify;
+}
