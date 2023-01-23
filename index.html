@@ -106,6 +106,13 @@
         </div>
         <!-- Portfolio Grid Items-->
         <div class="row justify-content-center">
+          <h3
+          class="page-section-sub-heading text-left text-uppercase text-secondary mb-3 ps-4"
+        >
+          Front End
+        </h3>
+        </div>
+        <div class="row justify-content-center">
 
                     <!-- Portfolio Item 5-->
                     <div class="col-md-6 col-lg-4 mb-5">
@@ -256,6 +263,78 @@
 
 
           </div>
+
+          <h3
+          class="page-section-sub-heading text-left text-uppercase text-secondary mb-3 ps-4"
+        >
+          Back End
+        </h3>
+
+        <div class="row justify-content-start">
+
+          <!-- Portfolio Item 7-->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div
+              class="portfolio-item mx-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#portfolioModal7"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="assets/img/portfolio/minesweeper-java-thumbnail.png"
+                alt="..."
+              />
+            </div>
+          </div>
+
+<!-- Portfolio Item 8-->
+<div class="col-md-6 col-lg-4 mb-5">
+  <div
+    class="portfolio-item mx-auto"
+    data-bs-toggle="modal"
+    data-bs-target="#portfolioModal8"
+  >
+    <div
+      class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+    >
+      <div
+        class="portfolio-item-caption-content text-center text-white"
+      >
+        <i class="fas fa-plus fa-3x"></i>
+      </div>
+    </div>
+    <img
+      class="img-fluid"
+      src="assets/img/portfolio/pokemon-high-score-spring-thumbnail.png"
+      alt="..."
+    />
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
         </div>
       </div>
     </section>
@@ -728,12 +807,12 @@
     </div>
 
 
-        <!-- Portfolio Modal 6-->
+        <!-- Portfolio Modal 7-->
         <div
         class="portfolio-modal modal fade"
-        id="portfolioModal6"
+        id="portfolioModal7"
         tabindex="-1"
-        aria-labelledby="portfolioModal6"
+        aria-labelledby="portfolioModal7"
         aria-hidden="true"
       >
         <div class="modal-dialog modal-xl">
@@ -754,7 +833,7 @@
                     <h2
                       class="portfolio-modal-title text-secondary text-uppercase mb-0"
                     >
-                      Morse Code Translator
+                      Minesweeper Java
                     </h2>
                     <!-- Icon Divider-->
                     <div class="divider-custom">
@@ -767,21 +846,16 @@
                     <!-- Portfolio Modal - Image-->
                     <img
                       class="img-fluid rounded mb-5"
-                      src="assets/img/portfolio/morse-code-thumbnail.png"
+                      src="assets/img/portfolio/minesweeper-java-thumbnail.png"
                       alt="..."
                     />
                     <!-- Portfolio Modal - Text-->
                     <p class="mb-4">
-                      This project will take user input and translate it from latin to morse code or reverse depending on which mode it is on. Unit testing was used and done with jest to ensure functionality was sufficient. This project reinforced aspects of DOM manipulation and unit testing.
+                      This project is minesweeper recreated with java to be played in the console. The playing field is a grid where the user can enter two coordinates to check the square. An instance of a hangman class is created on run. The user wins when all squares are checked that are not mines.
                     </p>
-                    <p>Built with: HTML, CSS/SCSS, Javascript and Jest</p>
-                    <a style="text-decoration: none;"  href="https://morse-code-translator-project.vercel.app/" target="_blank">
-                      <button class="btn btn-primary px-2">
-                          Website
-                        </button>
-                    </a>
+                    <p>Built with: Java</p>
                    
-                    <a class="mx-2" href="https://github.com/edrickhoo/morse-code-translator-project" target="_blank">
+                    <a class="mx-2" href="https://github.com/edrickhoo/Minesweeper-java" target="_blank">
                       <button class="btn btn-primary">
                           GitHub
                         </button>
@@ -793,6 +867,134 @@
           </div>
         </div>
       </div>
+
+
+      <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal8"
+      tabindex="-1"
+      aria-labelledby="portfolioModal8"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center pb-5">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                    Pokemon High Score API
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image-->
+                  <img
+                    class="img-fluid rounded mb-5"
+                    src="assets/img/portfolio/pokemon-high-score-spring-thumbnail.png"
+                    alt="..."
+                  />
+                  <!-- Portfolio Modal - Text-->
+                  <p class="mb-4">
+                    This project is a spring api which stores high scores for my pokemon quiz app. The API accepts a get method which will query the highscores database and get all enteries sorted from highest to lowest. A post method is also accepting a data transfer object with name and score. After it is passed into the controller and service it will create a highscore entity adding a unique ID and then querying the database to post it.
+                  </p>
+                  <p>Built with: Java and Spring</p>
+                 
+                  <a class="mx-2" href="https://github.com/edrickhoo/pokemonHighScoreServer" target="_blank">
+                    <button class="btn btn-primary">
+                        GitHub
+                      </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div
+    class="portfolio-modal modal fade"
+    id="portfolioModal6"
+    tabindex="-1"
+    aria-labelledby="portfolioModal6"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button
+            class="btn-close"
+            type="button"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body text-center pb-5">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title-->
+                <h2
+                  class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                >
+                  Morse Code Translator
+                </h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image-->
+                <img
+                  class="img-fluid rounded mb-5"
+                  src="assets/img/portfolio/morse-code-thumbnail.png"
+                  alt="..."
+                />
+                <!-- Portfolio Modal - Text-->
+                <p class="mb-4">
+                  This project will take user input and translate it from latin to morse code or reverse depending on which mode it is on. Unit testing was used and done with jest to ensure functionality was sufficient. This project reinforced aspects of DOM manipulation and unit testing.
+                </p>
+                <p>Built with: HTML, CSS/SCSS, Javascript and Jest</p>
+                <a style="text-decoration: none;"  href="https://morse-code-translator-project.vercel.app/" target="_blank">
+                  <button class="btn btn-primary px-2">
+                      Website
+                    </button>
+                </a>
+               
+                <a class="mx-2" href="https://github.com/edrickhoo/morse-code-translator-project" target="_blank">
+                  <button class="btn btn-primary">
+                      GitHub
+                    </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
  
 
     <!-- Bootstrap core JS-->
